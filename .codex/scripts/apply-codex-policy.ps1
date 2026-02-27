@@ -110,6 +110,20 @@ function Render-AutoSkillsList {
     return ($items -join "`r`n")
 }
 
+function Normalize-LineEndings {
+    param(
+        [AllowNull()][string]$Text
+    )
+
+    if ($null -eq $Text) {
+        return ''
+    }
+
+    $normalized = $Text.Replace("`r`n", "`n").Replace("`r", "`n")
+    $normalized = $normalized.TrimStart([char]0xFEFF)
+    return $normalized.TrimEnd("`n")
+}
+
 if (!(Test-Path $TemplatePath)) {
     throw "Template not found: $TemplatePath"
 }
@@ -158,7 +172,7 @@ foreach ($repo in $repos) {
         $needsUpdate = $true
         if (Test-Path $target) {
             $current = Get-Content -Path $target -Raw
-            if ($current -eq $renderedTemplate) {
+            if ((Normalize-LineEndings $current) -eq (Normalize-LineEndings $renderedTemplate)) {
                 $needsUpdate = $false
             }
         }
