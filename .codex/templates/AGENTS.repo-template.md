@@ -2,6 +2,12 @@
 
 Policy-Version: 1.0.0
 
+## Skills
+Installed skills are discovered from local `~/.codex/skills` and injected automatically.
+
+### Available skills
+{{AUTO_SKILLS_LIST}}
+
 ## Hard Gate: Plan Before Mutation
 For any task that changes repo-tracked files, Codex must produce a complete, decision-complete plan before any mutating action.
 
