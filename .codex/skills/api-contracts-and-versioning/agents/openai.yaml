@@ -1,0 +1,3 @@
+interface:
+  display_name: "API Contracts and Versioning"
+  short_description: "Define API contracts, compatibility, and versioning rules"

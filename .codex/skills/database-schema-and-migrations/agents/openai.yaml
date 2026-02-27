@@ -1,0 +1,3 @@
+interface:
+  display_name: "Schema and Migration Planning"
+  short_description: "Plan schema changes, backfills, and rollback-safe migrations"

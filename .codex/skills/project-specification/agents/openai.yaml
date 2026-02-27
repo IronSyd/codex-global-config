@@ -1,0 +1,3 @@
+interface:
+  display_name: "Project Specification"
+  short_description: "Enforce decision-complete plans before any mutating code changes"

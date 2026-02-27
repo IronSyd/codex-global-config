@@ -1,0 +1,3 @@
+interface:
+  display_name: "Architecture and ADRs"
+  short_description: "Design architecture and document key decisions with ADRs"
