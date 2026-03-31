@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Design"
+  short_description: "Help with frontend design workflows"
+  default_prompt: "Use $frontend-design to redesign this frontend surface with a clear visual direction and implementation plan."

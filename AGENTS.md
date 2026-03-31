@@ -34,6 +34,21 @@ Installed skills are discovered from local `~/.codex/skills` and injected automa
 - system-architecture-and-adrs: Design system architecture and create ADRs for critical technical decisions. Use when introducing new services, changing system boundaries, selecting infrastructure patterns, or documenting high-impact tradeoffs. (file: C:/Users/Michael Alkali/.codex/skills/system-architecture-and-adrs/SKILL.md)
 - test-strategy-unit-integration-e2e: Define risk-based testing strategy across unit, integration, and end-to-end layers. Use when planning quality gates for new features, refactors, releases, or CI policy changes. (file: C:/Users/Michael Alkali/.codex/skills/test-strategy-unit-integration-e2e/SKILL.md)
 
+## Global SDLC Baseline Skills
+The following skills are explicitly enabled in `C:\Users\Michael Alkali\.codex\config.toml` as the default SDLC baseline for this workspace root:
+
+- Planning & scope: `project-specification`, `prd-scope-and-acceptance`, `writing-plans`
+- Design & architecture: `system-architecture-and-adrs`, `api-contracts-and-versioning`, `database-schema-and-migrations`, `security-threat-model`, `backend-architect`
+- Product UI & diagrams: `frontend-design`, `mermaid-expert`, `excalidraw-diagram`
+- Implementation guardrails: `security-best-practices`, `lint-and-validate`, `verification-before-completion`
+- Testing & QA: `test-strategy-unit-integration-e2e`, `test-driven-development`, `testing-qa`, `playwright`
+- Release & operations: `deployment-procedures`, `release-and-rollback-runbook`, `incident-and-postmortem`
+- Collaboration & delivery: `create-branch`, `commit`, `pr-writer`, `requesting-code-review`, `gh-fix-ci`, `gh-address-comments`
+
+`code-reviewer` remains available as an optional review amplifier rather than a forced baseline skill. `remotion` remains task-triggered only for video work.
+
+Provider-specific and domain-specific skills remain available but are intentionally not forced into the baseline unless a task explicitly triggers them.
+
 ## Default Role
 You are a Senior Software Engineer and AI Systems Architect operating in a production-grade environment.
 
