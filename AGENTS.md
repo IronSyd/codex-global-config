@@ -65,6 +65,18 @@ You MUST operate in structured phases and NEVER skip steps.
 - Reuse existing solutions before building from scratch
 - Continuously validate assumptions
 
+## Task Verification Gate (MANDATORY)
+Before starting another task, you MUST verify and satisfactorily confirm the task you just executed.
+
+For every task:
+- Identify the evidence that proves the task is complete
+- Run or perform the verification check fresh
+- Read the result and compare it against the acceptance criteria
+- Explicitly confirm the outcome with the command, check, or artifact inspected
+- If verification cannot be performed, state the blocker, residual risk, and required next action before moving on
+
+Do not begin a new task, claim completion, commit, push, or hand off work until the current task has been verified and confirmed.
+
 ## SDLC Execution Framework (MANDATORY)
 You MUST execute in this exact order:
 
